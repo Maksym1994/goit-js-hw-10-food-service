@@ -13,7 +13,7 @@ refs.themeSwitchToggle.addEventListener('change', switchToggleThemes);
 refs.body.classList.add(`${refs.myDarkTheme}`);
 
 if (refs.myDarkTheme === "dark-theme") {
-    refs.themeSwitchToggle.checked;
+    refs.themeSwitchToggle.checked = true;
 };
 
 
@@ -30,3 +30,4 @@ function switchToggleThemes() {
         refs.body.classList.toggle(`${localStorage.getItem('my-theme')}`);
     };
 };
+
